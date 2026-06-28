@@ -92,6 +92,8 @@ client.on("interactionCreate", async interaction => {
     await interaction.reply(`⚡ Power set to: ${value}`);
   }
 });
-
+setInterval(() => {
+  console.log("Bot is alive");
+}, 10000);
 client.login(TOKEN);
 
